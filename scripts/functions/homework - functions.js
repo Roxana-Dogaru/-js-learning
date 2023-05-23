@@ -99,13 +99,14 @@ console.log(verificaCu0(-50))
 
 console.log("---Exercitiul - 8---");
 //8. Scrie o functie care afiseaza toate numerele pare dintre un min si maxim dat ca parametru 
-var numerePare="";
+
 function interval(numar1,numar2){
-    for (i=numar1;i<=numar2;i++){
-       
+    var numerePare="";
+    for (i=numar1+1;i<=numar2;i++){
+        var separator= i<numar2 ? ";" : "";
         if(i%2==0){
-            
-            numerePare=numerePare + " , " + i;
+           
+            numerePare=numerePare + i +separator;
         }else {
             numerePare = numerePare
         }
@@ -165,7 +166,7 @@ function tablaInmultirii (numar){
     for (i=0;i<=10;i++){
         console.log(numar + " * " + i + " = " + numar*i)
     }
-    
+   
 }
 tablaInmultirii(7)
 
@@ -216,13 +217,16 @@ function tema(nrExercitiu){
             rezultat = "parametrul primit: Ex-10; " + " nume functie: ordoneazaDescrescator ->rezultat functie: " + ordoneazaDescrescator(9,5,7);
             break;
         case "Ex-11":
-            rezultat = "parametrul primit: Ex-11; " + " nume functie: tablaInmultirii ->rezultat functie: " + tablaInmultirii(7);
+            rezultat = "parametrul primit: Ex-11; " + " nume functie: tablaInmultirii ->rezultat functie: " ;
+            console.log(rezultat, tablaInmultirii(7));
+            
+            
             break
     } 
 
     return rezultat
 }
-console.log(tema("Ex-10"))
+console.log(tema("Ex-11"))
 
 
 
