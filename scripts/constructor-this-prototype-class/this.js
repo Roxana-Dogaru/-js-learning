@@ -21,9 +21,9 @@ const calculator = {
 calculator.aduna(5); // => calculator.rezultat = 5
 calculator.scade(3);
 
-// calculator.afiseazaRezultat();
+//calculator.afiseazaRezultat();
 
-// calculator.afiseazaThis();
+ calculator.afiseazaThis();
 
 // ------------------------------
 
